@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>J&M | Resin Art Ecuador</title>
+    <meta name="description" content="Arte en resina personalizado, acabados de calidad, regalos únicos para toda ocasión en Ecuador.">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="glass-bg"></div>
+    
+    <header>
+        <nav>
+            <div class="logo">J&M <span>Resin Art</span></div>
+            <ul class="nav-links">
+                <li><a href="#home">Inicio</a></li>
+                <li><a href="#products">Productos</a></li>
+                <li><a href="#order" class="btn-primary">Hacer un Pedido</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <h1>Arte en Resina <br><span class="highlight">Personalizado</span></h1>
+                <p>💎 Acabados de calidad ✨ Regalos únicos para toda ocasión 📍 Ecuador 🇪🇨</p>
+                <a href="#products" class="btn-secondary">Explorar Colección</a>
+            </div>
+            <div class="hero-image-wrapper">
+                <div class="floating-image">
+                    <img src="assets/tray.png" alt="Bandeja de resina elegante">
+                </div>
+            </div>
+        </section>
+
+        <section id="products" class="products">
+            <h2>Nuestra <span class="highlight">Colección</span></h2>
+            <div class="product-grid">
+                <div class="product-card">
+                    <div class="card-image">
+                        <img src="assets/coaster.png" alt="Posavasos de resina">
+                    </div>
+                    <div class="card-content">
+                        <h3>Posavasos Florales</h3>
+                        <p>Diseño en resina con flores secas y hojuelas de oro.</p>
+                        <button class="btn-order" data-product="Posavasos Florales">Pedir Ahora</button>
+                    </div>
+                </div>
+                
+                <div class="product-card">
+                    <div class="card-image">
+                        <img src="assets/keychain.png" alt="Llavero de resina">
+                    </div>
+                    <div class="card-content">
+                        <h3>Llaveros Personalizados</h3>
+                        <p>Llaveros con iniciales, destellos y pétalos.</p>
+                        <button class="btn-order" data-product="Llaveros Personalizados">Pedir Ahora</button>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="card-image">
+                        <img src="assets/tray.png" alt="Bandeja de resina">
+                    </div>
+                    <div class="card-content">
+                        <h3>Bandejas Geodas</h3>
+                        <p>Bandejas decorativas con acabados premium y bordes dorados.</p>
+                        <button class="btn-order" data-product="Bandejas Geodas">Pedir Ahora</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="order" class="order-section">
+            <div class="glass-card">
+                <h2>¿Listo para hacer tu pedido?</h2>
+                <p>Envíanos un mensaje directo por WhatsApp para personalizar tu pedido.</p>
+                <form id="order-form">
+                    <div class="input-group">
+                        <label for="name">Tu Nombre</label>
+                        <input type="text" id="name" required placeholder="Ej. María Pérez">
+                    </div>
+                    <div class="input-group">
+                        <label for="interest">Producto de Interés</label>
+                        <select id="interest">
+                            <option value="Posavasos Florales">Posavasos Florales</option>
+                            <option value="Llaveros Personalizados">Llaveros Personalizados</option>
+                            <option value="Bandejas Geodas">Bandejas Geodas</option>
+                            <option value="Otro">Otro diseño personalizado</option>
+                        </select>
+                    </div>
+                    <div class="input-group">
+                        <label for="message">Detalles del diseño</label>
+                        <textarea id="message" rows="4" placeholder="Colores, detalles, iniciales..."></textarea>
+                    </div>
+                    <button type="submit" class="btn-primary w-full">Enviar por WhatsApp</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 J&M Resin Art Ecuador. Todos los derechos reservados.</p>
+        <p>Síguenos en <a href="https://www.instagram.com/jm.gongbang/" target="_blank">Instagram (@jm.gongbang)</a></p>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
